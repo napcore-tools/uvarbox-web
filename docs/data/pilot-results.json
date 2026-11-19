@@ -1,0 +1,22 @@
+{
+  "reference": "UVAR Box Final Report, official EU edition (2025), Table 2 (p. 25); 2022 pilot data",
+  "period": "2020–2022 pilot",
+  "total": 570,
+  "focusCountries": 5,
+  "countriesRepresented": 6,
+  "types": [
+    { "name": "Low-emission zones", "abbreviation": "LEZ", "count": 288 },
+    { "name": "Parking regulations", "abbreviation": "PARK", "count": 260 },
+    { "name": "Emergency pollution schemes", "abbreviation": "EMERG", "count": 14 },
+    { "name": "Limited traffic zones", "abbreviation": "LTZ", "count": 7 },
+    { "name": "Pedestrian zones", "abbreviation": "PED", "count": 1 }
+  ],
+  "countries": [
+    { "name": "Austria", "count": 274, "pilot": true },
+    { "name": "Italy", "count": 206, "pilot": true },
+    { "name": "Germany", "count": 66, "pilot": true },
+    { "name": "Netherlands", "count": 16, "pilot": true },
+    { "name": "Belgium", "count": 5, "pilot": true },
+    { "name": "Portugal", "count": 3, "pilot": false }
+  ]
+}

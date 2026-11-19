@@ -1,0 +1,42 @@
+name: Website content correction or update
+description: Propose a sourced change to the public UVAR Box information page.
+title: "Content: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping to keep the UVAR Box information accurate. Only share information that is already public or authorised for publication. Do not include credentials, personal data, private communications or unapproved drafts.
+  - type: input
+    id: location
+    attributes:
+      label: Page or statement
+      description: Where should the change appear?
+      placeholder: "e.g. Publications — historical outcomes"
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Proposed correction or addition
+      description: State the suggested wording or exact correction.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Public source and publication date
+      description: Please give a link or a verifiable citation.
+    validations:
+      required: true
+  - type: dropdown
+    id: period
+    attributes:
+      label: What period does the information describe?
+      options:
+        - Historical project result (2020–2022)
+        - Current verified information
+        - Future proposal or plan
+        - Uncertain — requires review
+    validations:
+      required: true
+

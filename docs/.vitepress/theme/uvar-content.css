@@ -1,0 +1,204 @@
+/* Project-specific additions to the upstream Awesome NAPCORE default-theme design. */
+:root { --uvar-green: #00835d; --uvar-paper: #ffffff; }
+.dark { --uvar-green: #60d3a5; --uvar-paper: #10274d; }
+html { scroll-behavior: smooth; }
+body { font-size: 16px; }
+
+/* Keep the three hero actions in one row on desktop. The narrower text and
+   padding respect the available width next to the illustration; small screens
+   keep the responsive layout instead of overflowing. */
+@media (min-width: 960px) {
+  .VPHome .VPHero.has-image .actions { flex-wrap: nowrap; }
+  .VPHome .VPHero .action { padding: 4px; }
+  .VPHome .VPHero .VPButton { padding: 0 12px; font-size: 14px; letter-spacing: .01em; white-space: nowrap; }
+}
+
+/* Original UVAR Box SVGs use a light framed tile with navy, green and yellow
+   shapes. No colour-mode-specific URL or brightness filter is needed, and
+   the same files stay legible in both themes. */
+.VPHome .VPFeatures .VPFeature .VPImage[src*='/icons/uvar-'] {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  object-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  filter: none;
+}
+.dark .VPHome .VPFeatures .VPFeature .VPImage[src*='/icons/uvar-'] { filter: none; }
+.VPHome .VPFeatures a.VPFeature:focus-visible {
+  outline: 3px solid var(--vp-c-brand-1);
+  outline-offset: 3px;
+}
+
+/* Home layout follows the original hp-* panel structure. */
+.uvar-hp.hp-sections {
+  max-width: 1190px;
+  /* Match the space below the ribbon to the space above it after VitePress
+     feature-item padding. The negative offset is deliberately small. */
+  margin: -10px auto 0;
+  padding: 5px 24px 68px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.uvar-hp .hp-panel {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 16px;
+  padding: 34px 38px;
+}
+.uvar-hp .hp-section-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.uvar-hp .hp-section-header h2,
+.uvar-hp .uvar-split h2 {
+  font-size: clamp(27px, 3.2vw, 38px);
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 0;
+  margin: 5px 0 8px;
+  border-top: 0;
+  color: var(--napcore-heading);
+}
+.uvar-hp .hp-section-header p { max-width: 740px; margin: 8px auto 0; font-size: 17px; line-height: 1.6; color: var(--vp-c-text-2); }
+.uvar-hp p { font-size: 17px; line-height: 1.64; }
+.uvar-hp a { font-weight: 700; }
+.uvar-hp .eyebrow { font-size: 14px; letter-spacing: .12em; font-weight: 700; text-transform: uppercase; color: var(--uvar-green); }
+.uvar-event-ribbon { display: flex; align-items: center; gap: 25px; padding: 20px 28px; border-radius: 12px; border-left: 5px solid var(--napcore-yellow); background: var(--vp-c-bg-soft); }
+.uvar-event-ribbon .eyebrow { min-width: 215px; }
+.uvar-event-ribbon p { margin: 0; font-size: 16px; }
+
+.uvar-flow-panel { background: var(--vp-c-bg) !important; }
+.uvar-flow-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+.uvar-flow-item {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-top: 4px solid var(--napcore-yellow);
+  border-radius: 12px;
+  padding: 20px 20px 22px;
+  min-height: 204px;
+}
+.uvar-flow-item:nth-child(2) { border-top-color: #008cff; }
+.uvar-flow-item:nth-child(3) { border-top-color: #00835d; }
+.uvar-flow-item:nth-child(4) { border-top-color: #0e3e9f; }
+.uvar-flow-item .flow-icon { display: inline-block; padding: 5px 10px; border-radius: 6px; background: #e1ebfb; color: #0e3e9f; font-size: 13px; letter-spacing: .07em; font-weight: 700; }
+.uvar-flow-item h3 { font-size: 21px; font-weight: 700; margin: 15px 0 4px; }
+.uvar-flow-item p { font-size: 16px; line-height: 1.52; margin: 0; }
+.uvar-hp .uvar-panel-note { font-size: 14px; color: var(--vp-c-text-2); margin: 17px 0 0; }
+
+.uvar-tool-panel { overflow: hidden; }
+.uvar-split { display: grid; grid-template-columns: .81fr 1.19fr; gap: 35px; align-items: center; }
+.uvar-split p { margin: 14px 0; }
+.uvar-tool-figure { margin: 0; }
+.uvar-tool-figure img { border: 1px solid var(--vp-c-divider); border-radius: 10px; width: 100%; box-shadow: 0 9px 26px rgba(0, 24, 79, .12); }
+.uvar-tool-figure figcaption { font-size: 13px; color: var(--vp-c-text-2); margin-top: 10px; text-align: right; }
+
+.pilot-results { width: 100%; }
+.pilot-highlights { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: #244f9b; border: 1px solid #244f9b; border-radius: 12px; overflow: hidden; }
+.pilot-highlights > div { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 22px 8px 24px; background: #082960; color: #fff; }
+.pilot-highlights strong { color: var(--napcore-yellow); font-size: clamp(36px, 5vw, 55px); line-height: 1.1; font-weight: 700; }
+.pilot-highlights span { margin-top: 6px; font-size: 15px; color: #dae5f6; }
+.pilot-chart { margin: 25px auto 8px; max-width: 850px; }
+.pilot-chart h3 { font-weight: 700; font-size: 20px; margin: 0 0 18px; }
+.pilot-row { display: grid; grid-template-columns: 125px 1fr 40px; gap: 14px; align-items: center; margin: 9px 0; }
+.pilot-label { font-weight: 600; font-size: 16px; }
+.pilot-track { height: 22px; background: var(--vp-c-divider); border-radius: 4px; overflow: hidden; }
+.pilot-bar { height: 100%; background: linear-gradient(90deg, #0e3e9f, #247be1); border-radius: 4px; min-width: 5px; }
+.pilot-count { font-weight: 700; font-size: 15px; }
+.pilot-results .pilot-caption { font-size: 14px; line-height: 1.5; color: var(--vp-c-text-2); margin: 19px 0 0; }
+.pilot-results .pilot-source { font-size: 14px; color: var(--vp-c-text-2); margin-top: 19px; }
+.uvar-hp .hp-section-cta { text-align: center; margin-top: 21px; }
+.uvar-hp .hp-section-cta p { margin: 0; }
+.uvar-hp .hp-section-cta a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 8px 24px; background: var(--napcore-navy); color: #fff; border-radius: 22px; text-decoration: none; font-size: 16px; }
+.uvar-hp .hp-section-cta a:hover { background: #0b66bc; }
+.dark .uvar-hp .hp-section-cta a { background: var(--napcore-yellow); color: #001b57; }
+
+.uvar-roadmap { display: grid; grid-template-columns: repeat(4,1fr); gap: 15px; }
+.uvar-hp .uvar-next-panel .hp-section-header { margin-bottom: 18px; }
+.uvar-roadmap > div { border: 1px solid var(--vp-c-divider); background: var(--vp-c-bg); border-radius: 10px; padding: 20px; }
+.uvar-roadmap strong { display: block; color: var(--napcore-heading); font-size: 21px; margin-bottom: 7px; }
+.uvar-roadmap span { display: block; color: var(--vp-c-text-2); font-size: 16px; line-height: 1.5; }
+.uvar-hp .hp-features.VPFeatures { padding: 0; }
+.uvar-hp .hp-features .VPFeature { background: var(--vp-c-bg); border: 1px solid var(--vp-c-divider); }
+.uvar-hp .hp-features .VPFeature .title { color: var(--napcore-heading); font-size: 20px; line-height: 1.25; border: 0; padding: 0; }
+.uvar-hp .hp-features .VPFeature .details { font-size: 16px; line-height: 1.6; }
+.uvar-hp .hp-features .VPFeature .link-text-value { font-weight: 700; }
+.VPHome .uvar-hp .hp-features .VPFeature .VPImage[src*='/icons/uvar-'] {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 16px;
+}
+
+/* Documentary pages: generous reading typography with shared brand. */
+.vp-doc { font-size: 17px; }
+.vp-doc p, .vp-doc li { line-height: 1.75; }
+.vp-doc h1 { font-size: clamp(35px, 4.1vw, 46px); line-height: 1.17; letter-spacing: -.02em; }
+.vp-doc h2 { padding-top: 20px; font-size: 27px; }
+.vp-doc h3 { font-size: 21px; }
+.vp-doc a { text-underline-offset: 3px; }
+.vp-doc .page-kicker { display: block; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--uvar-green); margin: -10px 0 26px; }
+.vp-doc img[alt="UVAR Box project mark"] { max-width: 240px; margin: 18px 0; }
+.vp-doc th { background: var(--napcore-table-head-bg); color: var(--napcore-table-head-text); }
+.vp-doc table { display: table; width: 100%; }
+.resource-list { display: grid; gap: 17px; margin: 28px 0 38px; }
+.resource-item { border: 1px solid var(--vp-c-divider); background: var(--vp-c-bg-soft); border-radius: 12px; padding: 22px 28px; }
+.resource-item .resource-meta { font-size: 14px; letter-spacing: .07em; font-weight: 700; text-transform: uppercase; color: var(--uvar-green); }
+.resource-item h2 { border: 0; margin: 4px 0; padding: 0; font-size: 23px; }
+.resource-item p { margin: 10px 0 12px; }
+.resource-item a { font-weight: 700; }
+.resource-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; margin-top: 15px; }
+.resource-actions a { display: inline-flex; align-items: center; min-height: 44px; font-size: 16px; }
+.resource-actions a:focus-visible { outline: 3px solid var(--vp-c-brand-1); outline-offset: 3px; border-radius: 3px; }
+.page-callout { border-left: 5px solid var(--napcore-yellow); background: var(--vp-c-bg-soft); border-radius: 8px; padding: 16px 21px; margin: 24px 0; }
+.page-callout p { margin: 0; }
+.legacy-screenshot { width: 100%; border: 1px solid var(--vp-c-divider); border-radius: 10px; }
+.screenshot-caption { font-size: 14px; color: var(--vp-c-text-2); margin-top: 10px; }
+.pilot-example-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
+.pilot-example { border: 1px solid var(--vp-c-divider); border-radius: 12px; padding: 24px; background: var(--vp-c-bg-soft); }
+.pilot-example strong { display: block; font-size: 22px; color: var(--napcore-heading); margin-bottom: 8px; }
+.pilot-example p { margin: 0; font-size: 16px; }
+.pilot-types { display: grid; grid-template-columns: repeat(5,1fr); gap: 8px; margin: 24px 0; }
+.pilot-type { background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-divider); border-radius: 10px; text-align: center; padding: 15px 5px; }
+.pilot-type strong { display: block; font-size: 26px; color: var(--napcore-heading); }
+.pilot-type span { display: block; font-size: 13px; color: var(--vp-c-text-2); }
+/* The upstream theme has a footer column reserved for its EU emblem. The
+   provisional site does not reproduce that emblem in its footer. */
+.VPFooter .container { display: block !important; text-align: center; }
+.VPFooter .message, .VPFooter .copyright { max-width: 920px; margin: 0 auto; }
+
+@media (max-width: 1050px) { .uvar-flow-grid { grid-template-columns: repeat(2,1fr); } .uvar-roadmap { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 720px) {
+  .uvar-hp.hp-sections { padding: 0 18px 45px; }
+  .uvar-hp .hp-panel { padding: 24px 20px; }
+  .uvar-event-ribbon { display: block; padding: 18px 20px; }
+  .uvar-event-ribbon p { margin-top: 8px; }
+  .uvar-split, .pilot-example-grid { grid-template-columns: 1fr; }
+  .pilot-row { grid-template-columns: 90px 1fr 32px; gap: 9px; }
+  .pilot-label { font-size: 14px; }
+  .pilot-highlights span { font-size: 13px; }
+  .pilot-types { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .VPHome .VPHero.has-image .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .VPHome .VPHero .action { width: 100%; }
+  .VPHome .VPHero .VPButton { width: 100%; }
+}
+@media (max-width: 475px) {
+  .uvar-flow-grid, .uvar-roadmap { grid-template-columns: 1fr; }
+  .uvar-flow-item { min-height: auto; }
+  .pilot-highlights { grid-template-columns: 1fr; }
+  .pilot-highlights > div { padding: 10px 8px; }
+  .pilot-highlights strong { font-size: 39px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .VPHome .VPFeatures .VPFeature { transition: none; }
+}
