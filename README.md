@@ -6,9 +6,9 @@ The source for a **public-facing, provisional information website** about the EU
 
 This website **does not operate the old UVAR Box tool or offer a current UVAR dataset**. It includes public historical documentation and cautiously labelled proposals for future work. Legacy application source code, credentials, private briefings, internal risk assessments, drafts and unreleased data are intentionally absent.
 
-## Local development
+## Local development 
 
-Requires Node.js 22.12+ or 24+ and npm.
+Requires Node.js 22.12+ or 24+ and npm.   
 
 ```bash
 npm ci
@@ -50,7 +50,6 @@ Do **not** use the separate `/uvarbox` URL as the default for this repository. T
 
 The inherited Awesome NAPCORE colours and layout conventions are in `docs/.vitepress/theme/napcore-theme.css`; UVAR-specific sections are in `docs/.vitepress/theme/uvar-content.css`. The 2022 totals powering the bar chart are in `docs/data/pilot-results.json`, displayed by `PilotResults.vue`. Navigation, metadata and base URL behaviour are in `docs/.vitepress/config.ts`.
 
-For the six UVAR-specific SVG icons, the responsive three-button hero layout and instructions for changing their sizes without losing sharpness, see [DESIGN-ASSETS.md](DESIGN-ASSETS.md).
 
 To propose a public update, use GitHub Issues or a pull request. Check a claim against a dated public source and describe its **time period**, **publisher**, **version**, and **limitations**. Do not convert an internal assessment or an unapproved plan into a public status statement.
 
