@@ -45,37 +45,41 @@ These publications document the UVAR Box project and its outputs from 2020–202
 - [Urban vehicle access regulations — European Commission](https://transport.ec.europa.eu/transport-themes/urban-transport/urban-vehicle-access-regulations_en).
 - [Quality Framework for UVAR data (2025) — NAPCORE](https://napcore.eu/wp-content/uploads/2025/03/3_NAPCORE-Quality-Framework-for-UVAR-v1.0.pdf). A later quality-assessment resource; it is not a validation certificate for the 2022 pilot records.
 
-## Additional historical technical documentation
+## Historical documentation archive
 
-The recovered UVAR Box archive contains further deliverables, manuals and workshop materials. This is a thematic review catalogue: the selection of the documents below and their provenance and republication rights must be agreed with the project partners.
+<div class="page-callout">
+  <p>
+    <strong>Explore the original UVAR Box and UVAR Exchange documentation</strong>
+  </p>
 
-### Understanding UVARs and legal processes
+  <p>
+    The recovered historical website preserves technical deliverables,
+    documentation of the original UVAR Box tool, project publications
+    and material from the related UVAR Exchange project.
+  </p>
 
-- **UVAR State of Play (D1.1, 2021):** survey and overview of the regulatory and administrative landscape.
-- **Legal processes for UVAR definition (D2.1, 2022):** how regulations are defined and managed by competent authorities.
+  <p>
+    <a
+      href="https://napcore-tools.github.io/uvarbox-legacy-web/library/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Browse the historical document library ↗
+    </a>
+  </p>
 
-### Modelling and digitising UVAR data
+  <p>
+    <a
+      href="https://napcore-tools.github.io/uvarbox-legacy-web/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Explore the archived project website ↗
+    </a>
+  </p>
 
-- **DATEX II Profiles (D1.3, 2021):** the project's early machine-readable data profiles.
-- **UVAR-related data flows (D2.4, 2022):** structured inputs, templates and exchanges.
-- **UVAR tool technical and user documentation (D2.5, 2022):** tool design, configuration and user workflows.
-- **UVAR Box tool user manual (2022):** step-by-step instructions for the original pilot interface.
-- **Amsterdam low-emission-zone DATEX II walkthrough (Workshop 3, 2021):** worked example of representing access conditions and exemptions.
 
-### Publication, access and evaluation
-
-- **UVAR tool package and development report (D2.3, 2022):** historical software delivery and development documentation.
-- **UVAR data (D2.6, 2022):** the project's data deliverable.
-- **UVAR data access in trip-planning services (D3.1, 2022):** potential downstream use of structured regulations.
-- **Evaluation of end-user information services (D3.2, 2022):** evaluation of information-service scenarios.
-- **Publication frameworks and sustainability strategies (D4.1/D4.2, 2022):** organisational arrangements for maintaining and publishing UVAR information.
-
-### Communication and related follow-on work
-
-- **Communication strategy (D5.1, 2020):** original project outreach approach.
-- **UVAR Exchange Final Report (2023):** findings of the separate follow-on action on driver information and cross-border enforcement.
-
-For the editorial discussion about **which materials to retain, link to their publisher, or exclude**, see the [source-file and publication-review inventory](https://github.com/napcore-tools/uvarbox-web/blob/main/DOCUMENT-REVIEW.md).
+</div>
 
 ## Other public references
 
