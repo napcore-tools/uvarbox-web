@@ -34,7 +34,7 @@ This is a **discussion agenda**, not a delivery commitment, funded roadmap or an
 
 The next useful questions concern who maintains each regulation, how conditions and exemptions are represented, which checks demonstrate fitness for reuse, how changes propagate to NAPs, and what service providers need to consume the information accurately.
 
-See [Get involved](/contribute) for a structured set of questions. Public, source-backed corrections to these pages may be raised through the [repository's issue form](https://github.com/napcore-tools/uvarbox-web/issues/new?template=content-update.yml) once the repository is published and issues are enabled.
+See [Get involved](/contribute) for a structured set of questions. Public, source-backed corrections to these pages may be raised through the [repository's issue form](https://github.com/napcore-tools/uvarbox-web/issues/new?template=content-update.yml).
 
 ## Publication principles
 

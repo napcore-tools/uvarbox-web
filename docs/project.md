@@ -36,6 +36,17 @@ The work connected three practical needs:
 
 This model was intended to reduce repeated data conversion and enable interoperability across national and local systems. It was a **project approach**, not a guarantee that every city or information service adopted it.
 
+## Who was UVAR Box designed for?
+
+The original project described four practical scenarios. They illustrate **intended uses**, not evidence that each service was deployed:
+
+- **Visiting drivers:** receive understandable information about an access zone in a journey-planning or navigation service before reaching it.
+- **Urban freight and logistics operators:** avoid repeatedly collecting and translating local restrictions for different deliveries and vehicle types.
+- **National Access Point teams:** receive consistently described restrictions from authorities, with clearer responsibilities for publication and updates.
+- **Navigation and mobility-service developers:** work with a common machine-readable format instead of interpreting separate city-specific data formats.
+
+Digitisation also depended on people and coordination. The project's **country coaches** supported exchanges between cities, regional or national authorities and the technical team, taking account of differing administrative procedures and languages. This support was part of the **2020–2022 project**, not a current onboarding service.
+
 ## What the 2022 project delivered
 
 The Final Report, available in its official EU edition published in 2025, describes the DATEX II UVAR data model, a digitisation tool, training and country-coach activities, and more than 500 digitised UVAR entries during the 2022 pilot. Its detailed table records 570 entries across several regulation types at project completion.
@@ -45,6 +56,14 @@ The project also studied differences in legal and organisational arrangements, d
 ![UVAR Box project mark](/brand/uvarbox-original.png)
 
 The number reported in 2022 is **not** a count of active, validated UVARs in 2026. The availability and licensing of any dataset intended for new public distribution require separate confirmation.
+
+## What came next: UVAR Exchange
+
+UVAR Exchange was a separate, subsequent European Parliament preparatory action commissioned by DG MOVE and led by Panteia. It began in September 2021, overlapping with UVAR Box, and presented findings at a final stakeholder workshop in Brussels on 18 October 2022.
+
+It complemented the digitisation work in two areas: **communicating restrictions to drivers** through physical signs, variable message signs and cooperative intelligent transport systems (C-ITS); and **examining cross-border exchange of vehicle and driver information** relevant to enforcement. Its scope and results should not be confused with the separate modernisation ideas being discussed for 2027.
+
+For contemporary public accounts, see the [European Commission's project announcement (September 2021)](https://urban-mobility-observatory.transport.ec.europa.eu/news-events/news/uvarexchange-project-kicks-2021-09-24_en) and the [POLIS final stakeholder workshop (October 2022)](https://www.polisnetwork.eu/event/uvar-exchange-final-stakeholder-workshop/).
 
 ## European policy context
 
@@ -63,4 +82,6 @@ The UVAR Box report recommended continued work on data maintenance, harmonised e
 - [UVAR Box Final Report (official EU edition, published 2025)](/publications) — project objectives, pilot countries and 2022 outcomes.
 - [POLIS Network project profile](https://www.polisnetwork.eu/project/uvar-box/) — consortium and public project description.
 - [European Commission Urban Mobility Observatory announcement, 18 August 2022](https://urban-mobility-observatory.transport.ec.europa.eu/news-events/news/uvarbox-tool-now-available-2022-08-18_en) — contemporary description of the tool's launch.
+- Recovered UVAR Box website, *Use Cases* and *Country Coaches* pages (2021–2022) — intended beneficiaries and historical stakeholder support; source material retained for editorial review, not republished as a live service.
+- [European Commission, UVAR Exchange project announcement (24 September 2021)](https://urban-mobility-observatory.transport.ec.europa.eu/news-events/news/uvarexchange-project-kicks-2021-09-24_en) — the follow-on action and its objectives.
 

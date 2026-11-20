@@ -34,10 +34,10 @@ body { font-size: 16px; }
 /* Home layout follows the original hp-* panel structure. */
 .uvar-hp.hp-sections {
   max-width: 1190px;
-  /* Match the space below the ribbon to the space above it after VitePress
-     feature-item padding. The negative offset is deliberately small. */
-  margin: -10px auto 0;
-  padding: 5px 24px 68px;
+  /* VitePress leaves 8px below the feature cards. With 17px above the
+     ribbon, the visible card-to-ribbon gap matches the 25px panel gap. */
+  margin: 17px auto 0;
+  padding: 0 24px 68px;
   display: flex;
   flex-direction: column;
   gap: 25px;

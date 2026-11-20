@@ -32,9 +32,7 @@ The single Austrian pedestrian-zone entry represented 260 streets in the project
 
 ## What the numbers do not establish
 
-The 570 entries were an **end-of-project snapshot from 2022**. They do not mean that 570 records are currently downloadable, maintained, verified by the issuing cities or suitable for operational journey guidance.
-
-The official Final Report explains that in several countries, country coaches digitised rules on behalf of cities and that city-level validation was not completed for every record.
+The 570 entries were an **end-of-project snapshot from 2022**. The official Final Report explains that in several countries, country coaches digitised rules on behalf of cities and that city-level validation was not completed for every record.
 
 ## How to use this evidence
 

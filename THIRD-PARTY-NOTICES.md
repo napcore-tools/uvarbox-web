@@ -4,6 +4,10 @@ This site adapts the design conventions of [Awesome NAPCORE / `napcore-tools/web
 
 The original project reports, UVAR Box logo, historical application screenshot and map tile imagery are **not** governed by this MIT notice. They retain their respective rights and attributions. Permission to redistribute them must be checked before public release.
 
+## Titillium Web font
+
+The Titillium Web font is bundled via `@fontsource/titillium-web`. It is credited to © 2009–2011 Accademia di Belle Arti di Urbino and students of the MA course of Visual design, and distributed under the **SIL Open Font License, Version 1.1 (OFL-1.1)**. See the package's bundled licence and the [SIL Open Font License](https://openfontlicense.org/).
+
 ## Awesome NAPCORE MIT licence
 
 MIT License

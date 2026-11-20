@@ -32,12 +32,12 @@ A machine-readable access restriction needs more than a point on a map. The mode
 
 <div class="pilot-example-grid">
   <div class="pilot-example">
-    <strong>Lisbon · 2022 XML sample</strong>
-    <p>A supplied DATEX II XML file represents Lisbon's LEZ 1 with a polygon, issuing authority, regulation type, date, weekday operating period and sets of vehicle conditions and exemptions. This is an archived example dated 7 June 2022, **not current driving advice**.</p>
+    <strong>Lisbon · best-effort outreach</strong>
+    <p>Outside the five focus countries, the official Final Report records that two low-emission zones and one limited traffic zone in Lisbon were digitised. The DATEX II XML file type LEZ issued authority, regulation type, date, weekday operating period and sets of vehicle conditions and exemptions.</p>
   </div>
   <div class="pilot-example">
-    <strong>Aachen · early model walkthrough</strong>
-    <p>The original technical walkthrough illustrates how an LEZ could use a traffic regulation order, geometric boundary and nested AND/OR conditions to represent complex exemptions. It documents modelling, not the current Aachen rules.</p>
+    <strong>Amsterdam · DATEX II walkthrough</strong>
+    <p>A September 2021 UVAR Box workshop presentation traces a low-emission zone from its traffic regulation order to a DATEX II representation, including vehicle conditions and nested exemptions. It illustrates the historical data model, not today's Amsterdam rules.</p>
   </div>
 </div>
 
@@ -49,14 +49,13 @@ That distinction matters for any future re-use. A file can be well formed yet be
 
 ## Historical implementation
 
-The 2022 technical documentation describes a Vue/OpenLayers browser client, REST interfaces, a Java application server and PostgreSQL/PostGIS storage. Those details refer to the historic application; they should not be taken as a recommendation to deploy the legacy software unchanged.
+The official Final Report (Section 3.1.1.2) describes a Vue/OpenLayers browser client, REST interfaces, a Java application server and PostgreSQL/PostGIS storage.
 
 For the project context, see [The project](/project). For what this provisional site currently provides, see [Status and next steps](/status).
 
 ### Sources
 
-- [UVAR Box Final Report (official EU edition, published 2025)](/publications) — original inputs, tool workflow, validation and the 2022 pilot experience.
-- *UVAR Box Technical and User Documentation*, D2.5, August 2022 — original functionality and software architecture; not redistributed on this provisional site.
-- *UVAR Box LEZ Aachen Example Walkthrough*, project technical presentation — early DATEX II modelling illustration.
-- *UVAR_20220607_LEZ_PT_LISBON1.xml*, archived example, 7 June 2022 — metadata and structure inspected; the original XML is not published here.
+- [UVAR Box Final Report (official EU edition, published 2025)](/publications), Sections 3.1.1–3.1.2 and 3.3.1 — original tool design, workflow, architecture, validation and the Lisbon results.
+- *From Traffic Regulation Order to UVAR to DATEX II: Amsterdam LEZ*, UVAR Box Workshop 3, September 2021 — historical modelling example, recovered for editorial review.
+- See the [additional historical technical documentation catalogue](/publications#additional-historical-technical-documentation) for related deliverables awaiting publication review.
 

@@ -40,7 +40,7 @@ What do you require to give travellers correct, understandable access advice?
 
 ## Suggest a correction or share a public requirement
 
-Once the repository is live and GitHub Issues are enabled, open a [content update issue](https://github.com/napcore-tools/uvarbox-web/issues/new?template=content-update.yml). Describe:
+Open a [content update issue](https://github.com/napcore-tools/uvarbox-web/issues/new?template=content-update.yml). Describe:
 
 1. The page or workflow you are addressing.
 2. The observed problem, requirement or proposed correction.
